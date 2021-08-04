@@ -3,19 +3,25 @@ import java.util.*;
 public class pra1 {
         public static void main(String arg[])
         {
-            long number, sum;
-            Scanner sc=new Scanner(System.in);
-            System.out.print("Enter a number: ");
-//reads a long number from the user
-            number=sc.nextLong();
-//executes until the condition number!=0 becomes false
-            for(sum=0; number!=0; number=number/10)
-            {
-//finds the last digit and add it to the variable sum
-                sum = sum + number % 10;
-            }
-//prints the result
-            System.out.println("Sum of digits: "+sum);
+
+                Scanner sc = new Scanner(System.in);
+                int N = sc.nextInt();
+                int sum = 0;
+                String num[] = new String[N];
+                for(int i=0; i<N; i++)
+                {
+                        num[i] = sc.next();
+                }
+                for(int i=0; i<N; i++)
+                {
+                        sum=0;
+                        for(int j=0; j<num[i].length(); j++)
+                        {
+                                sum=sum + (num[i].charAt(j) - '0');
+                        }
+                        System.out.println(sum);
+                }
+
         }
 
 
