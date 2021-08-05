@@ -13,7 +13,7 @@ public class CC_First_Last {
         {
             int sum,first,last;
             last=a[i]%10;
-            while(a[i]>10) {
+            while(a[i]>9) {
                 a[i] /= 10;
             }
             first=a[i];
