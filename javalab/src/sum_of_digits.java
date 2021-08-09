@@ -1,6 +1,6 @@
 
 import java.util.*;
-public class pra1 {
+public class sum_of_digits {
         public static void main(String arg[])
         {
 
