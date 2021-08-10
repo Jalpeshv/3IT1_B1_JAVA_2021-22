@@ -9,7 +9,7 @@ public class The_lead_game {
         for(int i=0;i<N;i++)
         {
             int a=sc.nextInt();
-            int b= sc.nextInt();
+            int b=sc.nextInt();
 
             diff1 = a - b;
             diff2 = b - a;
