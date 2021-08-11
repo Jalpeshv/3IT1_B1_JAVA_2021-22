@@ -14,6 +14,10 @@ public class LeadGame
             for(int j=0;j<2;j++)
             {
                 num[i][j] = sc.nextInt();
+                if(i>0)
+                {
+                    num[i][j]=num[i-1][j]+num[i][j];
+                }
             }
             lead[i]=num[i][0]-num[i][1];
             if(lead[i]<0)
