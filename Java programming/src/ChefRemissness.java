@@ -13,7 +13,14 @@ public class ChefRemissness
         {
          g1[i] = sc.nextInt();
          g2[i] = sc.nextInt();
-         min[i] = g1[i];
+         if(g1[i]>g2[i])
+         {
+             min[i] = g1[i];
+         }
+         else
+         {
+             min[i] = g2[i];
+         }
          max[i] = g1[i]+g2[i];
         }
         for (int i = 0; i < n; i++)
