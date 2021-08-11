@@ -4,30 +4,24 @@ import java.io.*;
 public class ChefAndRemissness {
     public static void main (String[] args) throws java.lang.Exception
     {
-        Scanner sc=new Scanner(System.in);
-        int t=sc.nextInt();
-        int i;
-        int a[]=new int[t];
-        int b[]=new int[t];
-        for(i=0;i<t;i++)
-        {
-            a[i]=sc.nextInt();
-            b[i]=sc.nextInt();
-        }
-        for(i=0;i<t;i++)
-        {
-            int k=a[i];
-            int j=b[i];
-            if(k>j)
-            {
-                System.out.println(k+" "+(k+j));
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        if (T >= 1 && T <= 100) {
+            for (int i = 0; i < T; i++) {
+                long A = sc.nextLong();
+                long B = sc.nextLong();
+                if (A <= 1000000 && B <= 1000000) {
+                    long max = A + B;
+                    if(A>B) {
+                        System.out.println(A + " " + max);
+                    }
+                    else {
+                        System.out.println(B + " " + max);
+                    }
+
+                }
             }
-            else{
-                System.out.println(j+" "+(k+j));
-            }
-        }
-        {
-            return;
+
         }
     }
 }
