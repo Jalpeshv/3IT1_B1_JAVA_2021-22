@@ -7,14 +7,14 @@ import java.lang.*;
             Scanner sc = new Scanner(System.in);
             int x = sc.nextInt();
             int y = sc.nextInt();
-            if(y%5==0 && x>y) {
-                System.out.println(x - y);
+            if(x%5==0 && x<y) {
+                System.out.println(y - x - 0.50);
             }
-            else if(y>x) {
-                System.out.println(x);
+            else if(y<x) {
+                System.out.println(y);
             }
             else {
-                System.out.println(x);
+                System.out.println(y);
             }
         }
     }
