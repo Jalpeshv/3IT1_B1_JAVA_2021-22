@@ -1,0 +1,15 @@
+import java.util.*;
+class codechef
+{
+    public static void main(String[] args)throws java.lang.Exception
+    {
+     Scanner sc = new Scanner(System.in);
+     double n = sc.nextDouble();
+     double max = sc.nextDouble();
+     if(max>=(n+0.5) && n%5==0)
+     {
+      max-=(n+0.5);
+     }
+     System.out.printf("%.2f",max);
+    }
+}
